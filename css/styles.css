@@ -141,6 +141,10 @@ p{
     background-color: #60a5fa;
 }
 
+.formulario form .botonIngresar:hover{
+    background-color: #3b82f6;
+}
+
 .formulario a{
     padding-top: 8px;
     justify-self: center;
