@@ -1,3 +1,150 @@
+:root{
+    --font-family: 'Times New Roman', Times, serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
-    background-color: gray;
+    display: flex;
+    font-size: 62.5%;
+    font-family: var(--font-family);
+    background-color: white;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+main{
+    background-image: url(../img/background.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 70%;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+p{
+    color: white;
+    text-align: center;
+}
+
+.principal .cabecera{
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.cabecera__logo{
+    margin-left: 20px;
+    width: 30px;
+    height: auto;
+}
+
+.principal .cabecera a{
+    font-size: 1.2rem;
+    color: white;
+}
+
+.cuerpo{
+    display: flex;
+    flex-direction: column;
+    margin-top: 52px;
+    padding: 30px;
+    padding-bottom: 100px;
+    align-items: center;
+    justify-items: center;
+}
+
+.cuerpo > p:first-child{
+    font-size: 2.4rem;
+}
+
+.cuerpo h1{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    padding: 12px;
+}
+
+.cuerpo p{
+    font-size: 1.2rem;
+    width: 500px;
+}
+
+.pie{
+    display: flex;
+    justify-content: center;
+    font-size: 0.8rem;
+    margin-top: auto;
+}
+
+.pie p, .pie a{
+    color: white;
+    font-size: 0.8rem;
+}
+
+.formulario{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.formulario h2{
+    color: #60a5fa;
+    font-size: 2.8rem;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.formulario form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario form label{
+    font-size: 1rem;
+    font-style: italic;
+}
+
+.formulario form input{
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    height: 36px;
+    width: 252px;
+    padding: 0 12px;
+    border-left: 4px solid #60a5fa;
+}
+
+.formulario form .botonIngresar{
+    border: none;
+    border-radius: 16px;
+    height: 36px;
+    width: 252px;
+    color: white;
+    background-color: #60a5fa;
+}
+
+.formulario a{
+    padding-top: 8px;
+    justify-self: center;
+    align-self: center;
+    color: #60a5fa;
+    font-size: 0.8rem;
 }
